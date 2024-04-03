@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Sentiment Analysis Result</h2>
+    <p>Sentiment: {{ sentiment }}</p>
+    <h2>Word Cloud</h2>
+    <img src="data:image/png;base64,{{ img_data }}" alt="Word Cloud">
+</body>
+</html>
